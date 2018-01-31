@@ -199,14 +199,15 @@ body {
   100% {
     margin-right: 0;
   }
-}.input_control{
+}
+.input_control{
   width:360px;
   margin:20px auto;
   width:80%;
   height: :5%;
 }
 input[type="text"],#btn1,#btn2{
-  top:95%;
+
   box-sizing: border-box;
   text-align:center;
   font-size:1.4em;
@@ -222,6 +223,9 @@ input[type="text"],#btn1,#btn2{
   text-decoration:none;
   width:80%;
   height: :5%;
+  position: fixed ! important;
+  right: 0px;
+  top: 100px;
 }
 input[type="text"]:focus{
   border:1px solid #ff7496;
