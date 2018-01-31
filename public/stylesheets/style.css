@@ -224,7 +224,7 @@ input[type="text"],#btn1,#btn2{
   width:90%;
   height: :5%;
   position: fixed ! important;
-  right:10%;
+  left:10%;
   top: 90%;
 }
 input[type="text"]:focus{
