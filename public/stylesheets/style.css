@@ -225,7 +225,7 @@ input[type="text"],#btn1,#btn2{
   height: :5%;
   position: fixed ! important;
   right: 0px;
-  top: 100px;
+  top: 90%;
 }
 input[type="text"]:focus{
   border:1px solid #ff7496;
