@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.get('/', function(req, res) {
-  res.render('index2', { currentTime: new Date() });
+  res.render('index', { currentTime: new Date() });
 });
 
 // 可以将一类的路由单独保存在一个文件中
