@@ -123,7 +123,7 @@ body {
 }
 
 /* Small screens */
-@media all and (max-width: 767px) {
+@media all and (max-width: 100%) {
   .chat-thread {
     width: 90%;
     height: 260px;
@@ -135,7 +135,7 @@ body {
   }
 }
 /* Medium and large screens */
-@media all and (min-width: 768px) {
+@media all and (min-width: 100%) {
   .chat-thread {
     width: 50%;
     height: 320px;
