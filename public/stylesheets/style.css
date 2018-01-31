@@ -221,7 +221,7 @@ input[type="text"],#btn1,#btn2{
   outline:0;
   padding:0 1em;
   text-decoration:none;
-  width:90%;
+  width:80%;
   height: :5%;
   position: fixed ! important;
   left:10%;
@@ -245,7 +245,7 @@ input[type="submit"],#btn1,#btn2{
   outline:0;
   padding:0 1em;
   text-decoration:none;
-  width:10%;
+  width:80%;
   height: :5%;
   position: fixed ! important;
   top: 90%;
