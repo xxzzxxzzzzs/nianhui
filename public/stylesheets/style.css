@@ -204,6 +204,7 @@ body {
   margin:20px auto;
 }
 input[type="text"],#btn1,#btn2{
+  top:95%;
   box-sizing: border-box;
   text-align:center;
   font-size:1.4em;
@@ -218,6 +219,7 @@ input[type="text"],#btn1,#btn2{
   padding:0 1em;
   text-decoration:none;
   width:80%;
+  height: :5%;
 }
 input[type="text"]:focus{
   border:1px solid #ff7496;
