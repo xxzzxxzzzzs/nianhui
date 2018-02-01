@@ -45,15 +45,15 @@ router.post('/', function(req, res, next) {
   mycars[8] = "孙悟空";
 
   var mycars2 = new Array();
-  mycars2[0] = 'user-1';
-  mycars2[1] = 'user-2';
-  mycars2[2] = 'user-3';
-  mycars2[3] = 'user-4';
-  mycars2[4] = 'user-5';
-  mycars2[5] = "user-6";
-  mycars2[6] = "user-7";
-  mycars2[7] = "user-8";
-  mycars2[8] = "user-8";
+  mycars2[0] = '/stylesheets/images/1.jpg';
+  mycars2[1] = '/stylesheets/images/2.jpg';
+  mycars2[2] = '/stylesheets/images/3.jpg'
+  mycars2[3] = '/stylesheets/images/4.jpg'
+  mycars2[4] = '/stylesheets/images/5.jpg'
+  mycars2[5] = '/stylesheets/images/6.jpg'
+  mycars2[6] = '/stylesheets/images/7.jpg'
+  mycars2[7] = '/stylesheets/images/8.jpg'
+  mycars2[8] = '/stylesheets/images/8.jpg'
 
   todo.set('content', content);
   todo.set('imgType',mycars2[i]);
