@@ -31,7 +31,22 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
   var content = req.body.content;
   var todo = new Todo();
+  var i=Math.floor(Math.random()*7)+1;
+  var imgType="thumb user-"+i
+  var mycars = new Array();
+  mycars[0] = "Saab";
+  mycars[1] = "Volvo";
+  mycars[2] = "BMW";
+  mycars[3] = "Saab";
+  mycars[4] = "Volvo";
+  mycars[5] = "BMW";
+  mycars[6] = "Saab";
+  mycars[7] = "Volvo";
+  mycars[8] = "BMW";
   todo.set('content', content);
+  todo.set('imgType',imgType);
+  todo.set('name',mycars[i]);
+
   todo.save().then(function(todo) {
     res.redirect('/todos');
   }).catch(next);

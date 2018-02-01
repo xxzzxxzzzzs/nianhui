@@ -70,20 +70,19 @@ setTimeout(function(){location.reload()},10000); //指定1秒刷新一次
 	<body>
 		<div class="container">
 			<header class="clearfix">
+
 				<!-- <h1>大连新中新电子有限公司年会</span></h1> -->
 				<!-- <h2> <span>新年快乐</span></h2> -->
+
 			</header>
 
 			<section class="main">
         <ul class="timeline">
           <% for(var i=0; i<todos.length; i++) {%>
-
             <li class="event">
               <input type="radio" name="tl-group"/>
               <label></label>
-              var n="thumb user-"+i%7+1;
-              C.innerHTML = "<div class='"+n+"'><span>i.var</span>"
-              <div class="thumb user-"+'i%7+1'><span>i.var</span></div>
+              <div class=<%= todos[i].get('imgType') %>><span><%= todos[i].get('name')%></span></div>
               <div class="content-perspective">
                 <div class="content">
                   <div class="content-inner">
