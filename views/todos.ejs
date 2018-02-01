@@ -57,52 +57,251 @@
 setTimeout(function(){location.reload()},10000); //指定1秒刷新一次
 </script>
 </html> -->
+
 <!DOCTYPE html>
 <html lang="zh">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
-		<script src="/stylesheets/js/modernizr.custom.63321.js"></script>
-		<!--[if lte IE 7]><style>.support-note .note-ie{display:block;}</style><![endif]-->
-	</head>
-	<body>
-		<div class="container">
-			<header class="clearfix">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets//bootstrap-grid.min.css" />
+	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/stylesheets//htmleaf-demo.css">
 
-				<!-- <h1>大连新中新电子有限公司年会</span></h1> -->
-				<!-- <h2> <span>新年快乐</span></h2> -->
+	<style type="text/css">
+	input[type="text"],#btn1,#btn2{
 
-			</header>
+	  box-sizing: border-box;
+	  text-align:center;
+	  font-size:1.4em;
+	  height:2.7em;
+	  border-radius:4px;
+	  border:1px solid #c8cccf;
+	  color:#6a6f77;
+	  -web-kit-appearance:none;
+	  -moz-appearance: none;
+	  display:block;
+	  outline:0;
+	  padding:0 1em;
+	  text-decoration:none;
+	  width:80%;
+	  height: :5%;
+	  position: fixed ! important;
+	  top: 90%;
+	}
+	input[type="text"]:focus{
+	  border:1px solid #ff7496;
+	}
+	input[type="submit"],#btn1,#btn2{
 
-			<section class="main">
-        <ul class="timeline">
-          <% for(var i=0; i<todos.length; i++) {%>
-            <li class="event">
-              <input type="radio" name="tl-group"/>
-              <label></label>
+	  box-sizing: border-box;
+	  text-align:center;
+	  font-size:1.4em;
+	  height:2.7em;
+	  border-radius:4px;
+	  border:1px solid #c8cccf;
+	  color:#6a6f77;
+	  -web-kit-appearance:none;
+	  -moz-appearance: none;
+	  display:block;
+	  outline:0;
+	  padding:0 1em;
+	  text-decoration:none;
+	  width:20%;
+	  height: :5%;
+	  position: fixed ! important;
+	  left:80%;
+	  top: 90%;
+	}
+	input[type="submit"]:focus{
+	  border:1px solid #ff7496;
+	}
+		.demo{ background: #e7e7e7; padding: 1.5em 0}
+		.main-timeline{
+		    position: relative;
+		    -webkit-transition: all 0.4s ease 0s;
+		    -moz-transition: all 0.4s ease 0s;
+		    -ms-transition: all 0.4s ease 0s;
+		    transition: all 0.4s ease 0s;
+		}
+		.main-timeline:before{
+		    content: "";
+		    width: 3px;
+		    height: 100%;
+		    background: #1abc9c;
+		    position: absolute;
+		    top: 0;
+		    left: 50%;
+		}
+		.main-timeline .timeline{
+		    margin-bottom: 50px;
+		    position: relative;
+		}
+		.main-timeline .timeline:before,
+		.main-timeline .timeline:after{
+		    content: "";
+		    display: block;
+		    width: 100%;
+		    clear: both;
+		}
+		.main-timeline .timeline-icon{
+		    width: 50px;
+		    height: 50px;
+		    border-radius: 50%;
+		    background: #1abc9c;
+		    overflow: hidden;
+		    margin-left: -23px;
+		    position: absolute;
+		    top: 0;
+		    left: 50%;
+		    text-align: center;
+		}
+		.main-timeline .timeline-icon i{
+		    font-size: 30px;
+		    line-height: 50px;
+		    color: #fff;
+		}
+		.main-timeline .timeline-content{
+		    width: 45%;
+		    padding: 20px;
+		    border-radius: 5px;
+		    background: #fff;
+		    -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+		    -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+		    -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+		    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+		    -webkit-transition: all 0.3s ease 0s;
+		    -moz-transition: all 0.3s ease 0s;
+		    -ms-transition: all 0.3s ease 0s;
+		    transition: all 0.3s ease 0s;
+		}
+		.main-timeline .timeline-content:before{
+		    content: "";
+		    border-left: 7px solid #1abc9c;
+		    border-top: 7px solid transparent;
+		    border-bottom: 7px solid transparent;
+		    position: absolute;
+		    left: 45%;
+		    top: 20px;
+		}
+		.main-timeline .title{
+		    font-size: 30px;
+		    font-weight: 300;
+		    color: #fff;
+		    padding: 10px;
+		    background: #1abc9c;
+		    border-radius: 3px 3px 0 0;
+		    margin: -20px -20px 10px;
+		}
+		.main-timeline .description{
+		    font-size: 14px;
+		    color: #726f77;
+		}
+		.main-timeline .read-more{
+		    display: inline-block;
+		    font-size: 12px;
+		    color: #64d8c1;
+		    text-transform: uppercase;
+		    padding: 5px 15px;
+		    border: 2px solid #64d8c1;
+		    position: relative;
+		    border-radius: 5px;
+		    -webkit-box-shadow: 2px 2px 0 #64d8c1;
+		    -moz-box-shadow: 2px 2px 0 #64d8c1;
+		    -ms-box-shadow: 2px 2px 0 #64d8c1;
+		    box-shadow: 2px 2px 0 #64d8c1;
+		}
+		.main-timeline .read-more:hover{
+		    top: 2px;
+		    left: 2px;
+		    box-shadow: none;
+		}
+		.main-timeline .timeline-content.right{
+		    float: right;
+		}
+		.main-timeline .timeline-content.right:before{
+		    content: "";
+		    right: 45%;
+		    left: inherit;
+		    border-left: 0;
+		    border-right: 7px solid #1abc9c;
+		}
+		@media only screen and (max-width: 990px){
+		    .main-timeline .title{
+		        font-size: 25px;
+		    }
+		    .main-timeline .timeline-content::before{
+		        top: 16px;
+		    }
+		}
+		@media only screen and (max-width: 767px){
+		    .main-timeline{ margin-left: 20px; }
+		    .main-timeline:before{ left: 0; }
+		    .main-timeline .timeline-content{
+		        width: 90%;
+		        float: right;
+		    }
+		    .main-timeline .timeline-content:before,
+		    .main-timeline .timeline-content.right:before{
+		        left: 10%;
+		        right: inherit;
+		        margin-left: -6px;
+		        border-left: 0;
+		        border-right: 7px solid #1abc9c;
+		    }
+		    .main-timeline .timeline-icon{
+		        left: 0;
+		    }
+		}
+		@media only screen and (max-width: 479px){
+		    .main-timeline .timeline-content{
+		        width: 85%;
+		    }
+		    .main-timeline .timeline-content:before,
+		    .main-timeline .timeline-content.right:before{
+		        left: 15%;
+		    }
+		    .main-timeline .title{
+		        font-size: 20px;
+		    }
+		    .main-timeline .timeline-content:before{
+		        top: 13px;
+		    }
+		}
+	</style>
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div class="demo">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-12">
+	                    <div class="main-timeline">
+												<% for(var i=0; i<todos.length; i++) {%>
+													<div class="timeline">
+															<div class="timeline-icon">
+																	<img class="imgss" src=<%= todos[i].get('imgType') %> />
+															</div>
+															<div class=<%= todos[i].get('type') %>
+																	<h2 class="title"><%= todos[i].get('name') %></h2>
+																	<p class="description">
+																			<%= todos[i].get('content') %>
+																	</p>
+															</div>
 
-							<div class="thumb">
-								<img class="imgss" src=<%= todos[i].get('imgType') %> />
-								<span><%= todos[i].get('name') %></span></div>
-              <div class=<%= todos[i].get('type') %>>
-                <div class="content">
-                  <div class="content-inner">
-                    <h3><%= todos[i].get('content') %></h3>
-                  </div>
-                </div>
-              </div>
-            </li>
-          <% } %>
-				</ul>
-			</section>
-      <form action="/todos" method="POST">
-        <input type="text" name="content" />
-        <input type="submit" value="发送" />
-      </form>
-		</div><!-- /container -->
+													</div>
+												<% } %>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
 
-	</body>
-
+	</div>
+	<form action="/todos" method="POST">
+		<input type="text" name="content" />
+		<input type="submit" value="发送" />
+	</form>
+</body>
 </html>
