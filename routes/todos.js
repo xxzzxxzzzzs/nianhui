@@ -32,7 +32,7 @@ router.post('/', function(req, res, next) {
   var content = req.body.content;
   var todo = new Todo();
   var i=Math.floor(Math.random()*7)+1;
-  var imgType="thumb"+" "+"user-"+i
+  var imgType=thumb user-i
   var mycars = new Array();
   mycars[0] = "Saab";
   mycars[1] = "Volvo";
