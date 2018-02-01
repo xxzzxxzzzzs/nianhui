@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="/stylesheets//bootstrap-grid.min.css" />
 	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/stylesheets//htmleaf-demo.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	<script src="/stylesheets/js/modernizr.custom.63321.js"></script>
 	<style type="text/css">
 		.demo{ background: #e7e7e7; padding: 1.5em 0}
 		.main-timeline{
@@ -174,7 +176,7 @@
 												<% for(var i=0; i<todos.length; i++) {%>
 													<div class="timeline">
 															<div class="timeline-icon">
-																	<i class="fa fa-star"></i>
+																	<img class="imgss" src=<%= todos[i].get('imgType') %> />
 															</div>
 															<div class="timeline-content">
 																	<h2 class="title"><%= todos[i].get('name') %></h2>
@@ -185,7 +187,6 @@
 															</div>
 
 													</div>
-									<!-- <%= todos[i].get('imgType') %> /> -->
 												<% } %>
 
 
