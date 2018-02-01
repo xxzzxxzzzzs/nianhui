@@ -32,17 +32,17 @@ router.post('/', function(req, res, next) {
   var content = req.body.content;
   var todo = new Todo();
   var i=Math.floor(Math.random()*7)+1;
-  var imgType="thumb"+" "+"user-"+i；
+  var imgType="thumb"+" "+"user-"+i;
   var mycars = new Array();
-  mycars[0] = "Saab";
-  mycars[1] = "Volvo";
-  mycars[2] = "BMW";
-  mycars[3] = "Saab";
-  mycars[4] = "Volvo";
-  mycars[5] = "BMW";
-  mycars[6] = "Saab";
-  mycars[7] = "Volvo";
-  mycars[8] = "BMW";
+  mycars[0] = "张三丰";
+  mycars[1] = "李世民";
+  mycars[2] = "康熙";
+  mycars[3] = "雍正";
+  mycars[4] = "太上老君";
+  mycars[5] = "玉皇大帝";
+  mycars[6] = "王母娘娘";
+  mycars[7] = "某人";
+  mycars[8] = "孙悟空";
   todo.set('content', content);
   todo.set('imgType',imgType);
   todo.set('name',mycars[i]);
