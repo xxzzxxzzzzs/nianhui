@@ -317,6 +317,8 @@ input[type="submit"]:focus{
 }
 .imgss{
   	border-radius: 50%;
+    width: 20%;
+    
 }
 .thumb:before {
 	content: '';
@@ -338,7 +340,7 @@ input[type="submit"]:focus{
 	font-size: 25px;
 	text-transform: uppercase;
 	position: absolute;
-	bottom: -45px;
+	bottom: -35px;
 }
 
 .user-1 {
