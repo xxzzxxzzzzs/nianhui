@@ -86,11 +86,10 @@ setTimeout(function(){location.reload()},10000); //指定1秒刷新一次
 							<div class="thumb">
 								<img class="imgss" src=<%= todos[i].get('imgType') %> />
 								<span><%= todos[i].get('name') %></span></div>
-              <div class="content-perspective">
+              <div class=<%= todos[i].get('type') %>>
                 <div class="content">
                   <div class="content-inner">
                     <h3><%= todos[i].get('content') %></h3>
-                    <!-- <p><%= todos[i].get('content') %></p> -->
                   </div>
                 </div>
               </div>
