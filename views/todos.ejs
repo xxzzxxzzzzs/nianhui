@@ -20,7 +20,7 @@
  setTimeout(function(){location.reload()},5000); //指定1秒刷新一次
  </script>
 </html> -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
@@ -56,4 +56,53 @@
 <script language="JavaScript">
 setTimeout(function(){location.reload()},10000); //指定1秒刷新一次
 </script>
+</html> -->
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+		<script src="/stylesheets/js/modernizr.custom.63321.js"></script>
+		<!--[if lte IE 7]><style>.support-note .note-ie{display:block;}</style><![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+
+				<h1>大连新中新电子有限公司年会</span></h1>
+				<h2> <span>新年快乐</span></h2>
+				<div class="support-note">
+					<span class="note-ie">Sorry, only modern browsers.</span>
+				</div>
+
+			</header>
+
+			<section class="main">
+        <ul class="timeline">
+          <% for(var i=0; i<todos.length; i++) {%>
+            <li class="event">
+              <input type="radio" name="tl-group"/>
+              <label></label>
+              <div class="thumb user-6"><span>18 Nov</span></div>
+              <div class="content-perspective">
+                <div class="content">
+                  <div class="content-inner">
+                    <h3></h3>
+                    <p><%= todos[i].get('content') %></p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          <% } %>
+				</ul>
+			</section>
+      <form action="/todos" method="POST">
+        <input type="text" name="content" />
+        <input type="submit" value="发送" />
+      </form>
+		</div><!-- /container -->
+
+	</body>
 </html>
