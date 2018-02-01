@@ -340,35 +340,35 @@ input[type="submit"]:focus{
 }
 
 .user-1 {
-	background-image: url(/stylesheetsimages/1.jpg);
+	background-image: url(/stylesheets/images/1.jpg);
 }
 
 .user-2 {
-	background-image: url(/stylesheetsimages/2.jpg);
+	background-image: url(/stylesheets/images/2.jpg);
 }
 
 .user-3 {
-	background-image: url(/stylesheetsimages/3.jpg);
+	background-image: url(/stylesheets/images/3.jpg);
 }
 
 .user-4 {
-	background-image: url(/stylesheetsimages/4.jpg);
+	background-image: url(/stylesheets/images/4.jpg);
 }
 
 .user-5 {
-	background-image: url(/stylesheetsimages/5.jpg);
+	background-image: url(/stylesheets/images/5.jpg);
 }
 
 .user-6 {
-	background-image: url(/stylesheetsimages/6.jpg);
+	background-image: url(/stylesheets/images/6.jpg);
 }
 
 .user-7 {
-	background-image: url(/stylesheetsimages/7.jpg);
+	background-image: url(/stylesheets/images/7.jpg);
 }
 
 .user-8 {
-	background-image: url(/stylesheetsimages/8.jpg);
+	background-image: url(/stylesheets/images/8.jpg);
 }
 
 /* Transparent Checkbox/radio hack: leave the checkbox on top, hide it with opacity 0 */
