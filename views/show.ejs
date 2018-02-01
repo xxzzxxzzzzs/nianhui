@@ -7,10 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="/stylesheets//bootstrap-grid.min.css" />
-	<!-- <link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link href="http://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="/stylesheets//htmleaf-demo.css">
-	<!-- <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /> -->
-	<!-- <script src="/stylesheets/js/modernizr.custom.63321.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	<script src="/stylesheets/js/modernizr.custom.63321.js"></script>
 	<style type="text/css">
 		.demo{ background: #e7e7e7; padding: 1.5em 0}
 		.main-timeline{
@@ -112,10 +112,10 @@
 		    left: 2px;
 		    box-shadow: none;
 		}
-		.main-timeline .timeline-contentright{
+		.main-timeline .timeline-content.right{
 		    float: right;
 		}
-		.main-timeline .timeline-contentright:before{
+		.main-timeline .timeline-content.right:before{
 		    content: "";
 		    right: 45%;
 		    left: inherit;
@@ -138,7 +138,7 @@
 		        float: right;
 		    }
 		    .main-timeline .timeline-content:before,
-		    .main-timeline .timeline-contentright:before{
+		    .main-timeline .timeline-content.right:before{
 		        left: 10%;
 		        right: inherit;
 		        margin-left: -6px;
@@ -154,7 +154,7 @@
 		        width: 85%;
 		    }
 		    .main-timeline .timeline-content:before,
-		    .main-timeline .timeline-contentright:before{
+		    .main-timeline .timeline-content.right:before{
 		        left: 15%;
 		    }
 		    .main-timeline .title{
@@ -178,15 +178,21 @@
 															<div class="timeline-icon">
 																	<img class="imgss" src=<%= todos[i].get('imgType') %> />
 															</div>
-															<div class=<%= todos[i].get('type') %>>
+															<div class=	<div class=<%= todos[i].get('type') %>>
 																	<h2 class="title"><%= todos[i].get('name') %></h2>
 																	<p class="description">
 																			<%= todos[i].get('content') %>
 																	</p>
+																	<!-- <a href="#" class="read-more">read more</a> -->
 															</div>
 
 													</div>
 												<% } %>
+
+
+
+
+
 	                    </div>
 	                </div>
 	            </div>

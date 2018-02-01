@@ -56,7 +56,7 @@ router.post('/', function(req, res, next) {
   mycars2[8] = '/stylesheets/images/8.jpg'
   var mycars3 = new Array();
   mycars3[0] = 'timeline-content';
-  mycars3[1] = 'timeline-contentright';
+  mycars3[1] = 'timeline-content right';
   todo.set('content', content);
   todo.set('imgType',mycars2[i]);
   todo.set('name',mycars[i]);
