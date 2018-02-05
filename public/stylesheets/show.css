@@ -44,7 +44,7 @@
 		color: #fff;
 }
 .main-timeline .timeline-content{
-		width: 85%;
+		width: 15%;
 		padding: 20px;
 		border-radius: 5px;
 		background: #fff;
@@ -63,7 +63,7 @@
 		border-top: 7px solid transparent;
 		border-bottom: 7px solid transparent;
 		position: absolute;
-		left: 85%;
+		left: 15%;
 		top: 20px;
 }
 .main-timeline .title{
@@ -137,7 +137,7 @@
 }
 @media only screen and (max-width: 479px){
 		.main-timeline .timeline-content{
-				width: 85%;
+				width: 15%;
 		}
 		.main-timeline .timeline-content:before,
 		/* .main-timeline .timeline-content.right:before{
