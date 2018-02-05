@@ -13,7 +13,7 @@
 		background: #2994FF;
 		position: absolute;
 		top: 0;
-		left: 90%;
+		left: 10%;
 }
 .main-timeline .timeline{
 		margin-bottom: 50px;
@@ -29,13 +29,13 @@
 .main-timeline .timeline-icon{
 		width: 50px;
 		height: 50px;
-		border-radius: 90%;
+		border-radius: 10%;
 		background: #2994FF;
 		overflow: hidden;
 		margin-left: -23px;
 		position: absolute;
 		top: 0;
-		left: 90%;
+		left: 10%;
 		text-align: center;
 }
 .main-timeline .timeline-icon i{
@@ -120,7 +120,7 @@
 		.main-timeline{ margin-left: 20px; }
 		.main-timeline:before{ left: 0; }
 		.main-timeline .timeline-content{
-				width: 90%;
+				width: 10%;
 				float: right;
 		}
 		.main-timeline .timeline-content:before,
