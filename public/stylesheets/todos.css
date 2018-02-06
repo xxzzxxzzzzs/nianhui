@@ -195,3 +195,6 @@ input[type="submit"]:focus{
 					top: 13px;
 			}
 	}
+	.body{
+		background-image: url(/stylesheet/images/new2.jpg);
+	}
