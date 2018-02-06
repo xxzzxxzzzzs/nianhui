@@ -155,7 +155,7 @@ input[type="submit"]:focus{
 	}
 	@media only screen and (max-width: 990px){
 			.main-timeline .title{
-					font-size: 25px;
+					font-size: 20px;
 			}
 			.main-timeline .timeline-content::before{
 					top: 16px;
