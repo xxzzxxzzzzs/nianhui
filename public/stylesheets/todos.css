@@ -43,6 +43,13 @@ input[type="submit"],#btn1,#btn2{
 input[type="submit"]:focus{
 	border:1px solid #ff7496;
 }
+body{
+
+  width: 100%;
+  height:auto;
+  background:url("/stylesheet/images/new2.jpg") no-repeat;
+  background-size: 100%;
+}
 	.demo{ background: #e7e7e7; padding: 1.5em 0}
 	.main-timeline{
 			position: relative;
@@ -194,7 +201,4 @@ input[type="submit"]:focus{
 			.main-timeline .timeline-content:before{
 					top: 13px;
 			}
-	}
-	.body{
-		background-image: url(/stylesheet/images/new2.jpg);
 	}

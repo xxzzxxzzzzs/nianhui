@@ -1,6 +1,10 @@
 .demo{ background: #e7e7e7; padding: 1.5em 0}
-.body{
-	background-image: url(/stylesheet/images/new.jpg);
+body{
+
+  width: 100%;
+  height:auto;
+  background:url("/stylesheet/images/new2.jpg") no-repeat;
+  background-size: 100%;
 }
 .main-timeline{
 		position: relative;
