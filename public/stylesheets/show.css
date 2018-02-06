@@ -13,7 +13,7 @@
 		background: #2994FF;
 		position: absolute;
 		top: 0;
-		right:10%;
+		right: 90%;
 }
 .main-timeline .timeline{
 		margin-bottom: 50px;
@@ -35,7 +35,7 @@
 		margin-left: -23px;
 		position: absolute;
 		top: 0;
-		right: 10%;
+		right: 90%;
 		text-align: center;
 }
 .main-timeline .timeline-icon i{
@@ -63,7 +63,7 @@
 		border-top: 7px solid transparent;
 		border-bottom: 7px solid transparent;
 		position: absolute;
-		right: 10%;
+		right: 85%;
 		top: 20px;
 }
 .main-timeline .title{
@@ -95,7 +95,7 @@
 }
 .main-timeline .read-more:hover{
 		top: 2px;
-		left: 2px;
+		right: 2px;
 		box-shadow: none;
 }
 /* .main-timeline .timeline-content.right{
@@ -120,8 +120,8 @@
 		.main-timeline{ margin-left: 20px; }
 		.main-timeline:before{ left: 0; }
 		.main-timeline .timeline-content{
-				width: 85%;
-				float: right;
+				width: 90%;
+				float: left;
 		}
 		.main-timeline .timeline-content:before,
 		/* .main-timeline .timeline-content.right:before{
