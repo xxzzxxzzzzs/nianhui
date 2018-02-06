@@ -13,7 +13,7 @@
 		background: #2994FF;
 		position: absolute;
 		top: 0;
-		left: 90%;
+		left: 10%;
 }
 .main-timeline .timeline{
 		margin-bottom: 50px;
@@ -35,7 +35,7 @@
 		margin-left: -23px;
 		position: absolute;
 		top: 0;
-		left: 90%;
+		left: 10%;
 		text-align: center;
 }
 .main-timeline .timeline-icon i{
@@ -63,7 +63,7 @@
 		border-top: 7px solid transparent;
 		border-bottom: 7px solid transparent;
 		position: absolute;
-		left: 85%;
+		left: 15%;
 		top: 20px;
 }
 .main-timeline .title{
