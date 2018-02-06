@@ -47,7 +47,7 @@ body{
 
   width: 100%;
   height:auto;
-  background:url("/stylesheets/images/new2.jpg") no-repeat;
+  background: "/stylesheets/images/new2.jpg";
   background-size: 100%;
 }
 	.demo{ background: #e7e7e7; padding: 1.5em 0}

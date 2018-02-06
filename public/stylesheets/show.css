@@ -1,5 +1,11 @@
 .demo{ background: #e7e7e7; padding: 1.5em 0}
+body{
 
+  width: 100%;
+  height:auto;
+  background: "/stylesheets/images/new2.jpg";
+  background-size: 100%;
+}
 .main-timeline{
 		position: relative;
 		-webkit-transition: all 0.4s ease 0s;
