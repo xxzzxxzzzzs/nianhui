@@ -7,8 +7,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
-	<!-- <link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-grid.min.css" /> -->
-	<!-- <link rel="stylesheet" type="text/css" href="/stylesheets/htmleaf-demo.css"> -->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap-grid.min.css" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/htmleaf-demo.css">
 	<link rel="stylesheet" type="text/css" href="/stylesheets/todos.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
 																	<img class="imgss" src=<%= todos[i].get('imgType') %> />
 															</div>
 															<div class="timeline-content">
-																	<p class="title"><%= todos[i].get('name') %></p>
+																	<h2 class="title"><%= todos[i].get('name') %></h2>
 																	<p class="description">
 																			<%= todos[i].get('content') %>
 																	</p>

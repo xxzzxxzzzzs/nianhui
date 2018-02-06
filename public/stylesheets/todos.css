@@ -84,7 +84,7 @@ input[type="submit"]:focus{
 			text-align: center;
 	}
 	.main-timeline .timeline-icon i{
-			font-size: 20px;
+			font-size: 30px;
 			line-height: 50px;
 			color: #fff;
 	}
@@ -112,7 +112,7 @@ input[type="submit"]:focus{
 			top: 20px;
 	}
 	.main-timeline .title{
-			font-size: 20px;
+			font-size: 30px;
 			font-weight: 300;
 			color: #fff;
 			padding: 10px;
@@ -121,12 +121,12 @@ input[type="submit"]:focus{
 			margin: -20px -20px 10px;
 	}
 	.main-timeline .description{
-			font-size: 18px;
+			font-size: 14px;
 			color: #726f77;
 	}
 	.main-timeline .read-more{
 			display: inline-block;
-			font-size: 18px;
+			font-size: 12px;
 			color: #64d8c1;
 			text-transform: uppercase;
 			padding: 5px 15px;
@@ -155,7 +155,7 @@ input[type="submit"]:focus{
 	}
 	@media only screen and (max-width: 990px){
 			.main-timeline .title{
-					font-size: 20px;
+					font-size: 25px;
 			}
 			.main-timeline .timeline-content::before{
 					top: 16px;

@@ -39,7 +39,7 @@
 		text-align: center;
 }
 .main-timeline .timeline-icon i{
-		font-size: 20px;
+		font-size: 30px;
 		line-height: 50px;
 		color: #fff;
 }
@@ -67,7 +67,7 @@
 		top: 20px;
 }
 .main-timeline .title{
-		font-size: 10px;
+		font-size: 30px;
 		font-weight: 300;
 		color: #fff;
 		padding: 10px;
@@ -76,12 +76,12 @@
 		margin: -20px -20px 10px;
 }
 .main-timeline .description{
-		font-size: 18px;
+		font-size: 14px;
 		color: #726f77;
 }
 .main-timeline .read-more{
 		display: inline-block;
-		font-size: 18px;
+		font-size: 12px;
 		color: #64d8c1;
 		text-transform: uppercase;
 		padding: 5px 15px;
@@ -110,7 +110,7 @@
 } */
 @media only screen and (max-width: 990px){
 		.main-timeline .title{
-				font-size: 10px;
+				font-size: 25px;
 		}
 		.main-timeline .timeline-content::before{
 				top: 16px;
@@ -144,7 +144,7 @@
 				left: 15%;
 		} */
 		.main-timeline .title{
-				font-size: 10px;
+				font-size: 20px;
 		}
 		.main-timeline .timeline-content:before{
 				top: 13px;
