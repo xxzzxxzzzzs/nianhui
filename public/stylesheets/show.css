@@ -45,7 +45,7 @@
 }
 .main-timeline .timeline-content{
 		width: 85%;
-		left: 15%;
+		left: 25%;
 		padding: 20px;
 		border-radius: 5px;
 		background: #fff;
@@ -64,7 +64,7 @@
 		border-top: 7px solid transparent;
 		border-bottom: 7px solid transparent;
 		position: absolute;
-		left: 15%;
+		left: 25%;
 		top: 20px;
 }
 .main-timeline .title{
