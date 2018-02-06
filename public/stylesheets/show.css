@@ -67,7 +67,7 @@
 		top: 20px;
 }
 .main-timeline .title{
-		font-size: 20px;
+		font-size: 10px;
 		font-weight: 300;
 		color: #fff;
 		padding: 10px;
@@ -110,7 +110,7 @@
 } */
 @media only screen and (max-width: 990px){
 		.main-timeline .title{
-				font-size: 20px;
+				font-size: 10px;
 		}
 		.main-timeline .timeline-content::before{
 				top: 16px;
@@ -144,7 +144,7 @@
 				left: 15%;
 		} */
 		.main-timeline .title{
-				font-size: 20px;
+				font-size: 10px;
 		}
 		.main-timeline .timeline-content:before{
 				top: 13px;
