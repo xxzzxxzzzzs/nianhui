@@ -1,52 +1,73 @@
-# Node.js Getting started
-在 LeanCloud 云引擎上使用 Express 的 Node.js 实例项目。
+# Learn Blockchains by Building One
 
-## 一键部署
-[![Deploy to LeanEngine](http://ac-32vx10b9.clouddn.com/109bd02ee9f5875a.png)](https://leancloud.cn/1.1/engine/deploy-button)
+[![Build Status](https://travis-ci.org/dvf/blockchain.svg?branch=master)](https://travis-ci.org/dvf/blockchain)
 
-## 本地运行
+This is the source code for my post on [Building a Blockchain](https://medium.com/p/117428612f46). 
 
-首先确认本机已经安装 [Node.js](http://nodejs.org/) 运行环境和 [LeanCloud 命令行工具](https://leancloud.cn/docs/leanengine_cli.html)，然后执行下列指令：
+## Installation
 
-```
-$ git clone https://github.com/leancloud/node-js-getting-started.git
-$ cd node-js-getting-started
-```
-
-安装依赖：
+1. Make sure [Python 3.6+](https://www.python.org/downloads/) is installed. 
+2. Install [pipenv](https://github.com/kennethreitz/pipenv). 
 
 ```
-npm install
+$ pip install pipenv 
 ```
 
-登录并关联应用：
+3. Create a _virtual environment_ and specify the Python version to use. 
 
 ```
-lean login
-lean switch
+$ pipenv --python=python3.6
 ```
 
-启动项目：
+4. Install requirements.  
 
 ```
-lean up
+$ pipenv install 
+``` 
+
+5. Run the server:
+    * `$ pipenv run python blockchain.py` 
+    * `$ pipenv run python blockchain.py -p 5001`
+    * `$ pipenv run python blockchain.py --port 5002`
+    
+## Docker
+
+Another option for running this blockchain program is to use Docker.  Follow the instructions below to create a local Docker container:
+
+1. Clone this repository
+2. Build the docker container
+
+```
+$ docker build -t blockchain .
 ```
 
-之后你就可以在 [localhost:3000](http://localhost:3000) 访问到你的应用了。
+3. Run the container
 
-## 部署到 LeanEngine
-
-部署到预备环境（若无预备环境则直接部署到生产环境）：
 ```
-lean deploy
+$ docker run --rm -p 80:5000 blockchain
 ```
 
-## 相关文档
+4. To add more instances, vary the public port number before the colon:
 
-* [云函数开发指南](https://leancloud.cn/docs/leanengine_cloudfunction_guide-node.html)
-* [网站托管开发指南](https://leancloud.cn/docs/leanengine_webhosting_guide-node.html)
-* [JavaScript 开发指南](https://leancloud.cn/docs/leanstorage_guide-js.html)
-* [JavaScript SDK API](https://leancloud.github.io/javascript-sdk/docs/)
-* [Node.js SDK API](https://github.com/leancloud/leanengine-node-sdk/blob/master/API.md)
-* [命令行工具使用指南](https://leancloud.cn/docs/leanengine_cli.html)
-* [云引擎常见问题和解答](https://leancloud.cn/docs/leanengine_faq.html)
+```
+$ docker run --rm -p 81:5000 blockchain
+$ docker run --rm -p 82:5000 blockchain
+$ docker run --rm -p 83:5000 blockchain
+```
+
+## Installation (C# Implementation)
+
+1. Install a free copy of Visual Studio IDE (Community Edition):
+https://www.visualstudio.com/vs/
+
+2. Once installed, open the solution file (BlockChain.sln) using the File > Open > Project/Solution menu options within Visual Studio.
+
+3. From within the "Solution Explorer", right click the BlockChain.Console project and select the "Set As Startup Project" option.
+
+4. Click the "Start" button, or hit F5 to run. The program executes in a console window, and is controlled via HTTP with the same commands as the Python version.
+
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
